@@ -92,7 +92,7 @@ EXECUTE sys.sp_executesql @SQLStatement;
 SET @SQLStatement = N'';
 
 /**********************************************************************************************************************
-** Disable Temporal Table - ALTER TABLE dbo.AccountCredit SET (SYSTEM_VERSIONING = OFF);
+** Disable Temporal Table
 **********************************************************************************************************************/
 SELECT
     @SQLStatement = @SQLStatement + COALESCE(N'ALTER TABLE ' + SchemaName + '.' + TableName + N' SET (SYSTEM_VERSIONING = OFF);', N'') + @NewLineString
