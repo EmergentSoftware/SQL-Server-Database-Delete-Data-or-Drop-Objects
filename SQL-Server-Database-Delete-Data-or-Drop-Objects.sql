@@ -23,6 +23,7 @@
 
 DECLARE @DeleteData bit = 0; /* 1=deletes data in all tables */
 DECLARE @ReseedTableIdentity bit = 0; /* 1=Reseed the identity columns seed value to zero */
+
 DECLARE @DropTables bit = 0; /* 1=drops all tables */
 DECLARE @DropViews bit = 0; /* 1=drops all views */
 DECLARE @DropStoredProcedures bit = 0; /* 1=drops all stored procedures */
